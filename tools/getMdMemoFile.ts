@@ -12,7 +12,7 @@ const getMdMemoFile: Tool = {
     properties: {
       title : { type: "string", description: "The title of the memo. This will be the filen name. It must match [a-zA-Z0-9_]+" },
     },
-    required: ["title", "url"],
+    required: ["title"],
   },
 
   // deno-lint-ignore no-explicit-any

@@ -13,7 +13,7 @@ const grepMdMemoFile: Tool = {
       pattern : { type: "string", description: "The pattern to search" },
       include_n_lines_surrounding: { type: "number", description: "The number of lines surrounding the matched line to include", default: 0 },
     },
-    required: ["title", "url"],
+    required: ["pattern", "include_n_lines_surrounding"],
   },
 
   // deno-lint-ignore no-explicit-any require-await
