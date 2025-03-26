@@ -6,6 +6,7 @@ import readUrl from "./readUrl.ts";
 import saveMdMemoFile from "./saveMdMemoFile.ts";
 import grepMdMemoFile from "./grepMdMemoFile.ts";
 import getMdMemoFile from "./getMdMemoFile.ts";
+import listMdMemoFile from "./listMdMemoFile.ts";
 
 // Register all tools here
 // When adding a new tool, just import it above and add it to this array
@@ -14,7 +15,8 @@ const toolsList: Tool[] = [
   readUrl,
   saveMdMemoFile,
   grepMdMemoFile,
-  getMdMemoFile
+  getMdMemoFile,
+  listMdMemoFile,
   // Add more tools here
 ];
 
