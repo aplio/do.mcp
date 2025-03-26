@@ -1,0 +1,16 @@
+{
+  "name": "do.mcp",
+  "version": "1.0.0",
+  "description": "MCP Server with getStringLength and readUrl tools",
+  "tasks": {
+    "start": "deno run -A server.ts",
+    "test": "deno run -A test.ts"
+  },
+  "imports": {
+    "@modelcontextprotocol/sdk/": "npm:@modelcontextprotocol/sdk@1.5.0/",
+    "jsdom": "npm:jsdom@26.0.0",
+    "@mozilla/readability": "npm:@mozilla/readability",
+    "html-to-md": "npm:html-to-md",
+    "std/": "https://deno.land/std/"
+  }
+}
