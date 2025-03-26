@@ -4,13 +4,17 @@ import { Tool } from "./types.ts";
 import getStringLength from "./getStringLength.ts";
 import readUrl from "./readUrl.ts";
 import saveMdMemoFile from "./saveMdMemoFile.ts";
+import grepMdMemoFile from "./grepMdMemoFile.ts";
+import getMdMemoFile from "./getMdMemoFile.ts";
 
 // Register all tools here
 // When adding a new tool, just import it above and add it to this array
 const toolsList: Tool[] = [
   getStringLength,
   readUrl,
-  saveMdMemoFile
+  saveMdMemoFile,
+  grepMdMemoFile,
+  getMdMemoFile
   // Add more tools here
 ];
 
