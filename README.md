@@ -7,7 +7,9 @@
       "my-mcp-server": {
         "command": "deno",
         "args": ["run", "-A", "path/to/your/server.ts"],
-        "env": {},
+        "env": {
+          "MD_MEMO_DIR": "path/to/your/memo/dir"
+        },
         "disabled": false,
         "alwaysAllow": []
       }
