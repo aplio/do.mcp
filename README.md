@@ -37,8 +37,28 @@ This is a modular implementation of a Model Context Protocol (MCP) server that m
 
 ## How to Run
 
+### Start the MCP Server
+
 ```bash
-deno run --allow-net src/server.ts
+deno run --allow-net --allow-read --allow-write --allow-env server.ts
+```
+
+### Using the CLI
+
+You can also run the tools directly from the command line:
+
+```bash
+# List all available tools
+deno run --allow-net --allow-read --allow-write --allow-env cli.ts --list
+
+# Get help
+deno run --allow-net --allow-read --allow-write --allow-env cli.ts --help
+
+# Run a specific tool
+deno run --allow-net --allow-read --allow-write --allow-env cli.ts --tool getStringLength --args '{"input":"Hello, world!"}'
+
+# Run readUrl tool
+deno run --allow-net --allow-read --allow-write --allow-env cli.ts --tool readUrl --args '{"url":"https://example.com"}'
 ```
 
 ## Adding a New Tool
